@@ -4,55 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Form Fields</title>
 </head>
 <body>
     <form method="GET" action="asset_pathing.html">
+
         <div>
-            <label for="firstname">Input: Text</label>
-            <input type="text" id="firstname" name="firstname">
+            <label for="firstname">Input:First Name</label>
+            <input required="required" type="text" name="firstname" id="firstname">
         </div>
         <div>
-            <label for="checkbox_field">Input: Checkbox</label>
-            <input type="checkbox" value="1" name="checkbox">
+            <label for="Checkbox">Checkbox</label>
+            <input required="required" type="checkbox" name="Checkbox" value="1">
         </div>
         <div>
-            <label>Radio buttons</label>
-            <input type="radio" name="radio_test" id="1">
-            <input type="radio" name="radio_test" id="2">
-            <input type="radio" name="radio_test" id="3">
+            <label>Radio Buttons</label>
+            <input required="required" type="radio" name="radio_test" value="1">1
+            <input required="required" type="radio" name="radio_test" value="2">2
+            <input required="required" type="radio" name="radio_test" value="3">3
         </div>
         <div>
-            <label for="">Input:Date</label>
-            <input type="date" name="date">
+            <label for="date">Date</label>
+            <input required="required" type="date" name="date">
         </div>
         <div>
-            Email
-            <input type="email" name="email">
+            <label for="hidden"></label>
+            <input required="required" type="hidden" name="hidden" id="hidden">
         </div>
         <div>
-            Hidden
-            <input type="hidden" name="hidden" value="is_hidden">
+            <label for="email">Email</label>
+            <input required="required" type="email" name="email" id="email">
         </div>
         <div>
-            Number
-            <input type="number" name="number" step="1" max="50" min="0">
+            <label for="password">Password</label>
+            <input required="required" type="password" name="password" placeholder="Ghost Text">
         </div>
         <div>
-            Password
-            <input type="password" name="password" placeholder="Ghost text">
+            <label for="number">Number</label>
+            <input required="required" type="number" name="number" step="1" max="50" min="0">
         </div>
         <div>
-            URL
-            <input type="url" name="url" id="asset_pathing">
-        </div>
-        <div></div>
-            File Upload
-            <input type="file" name="file" value="">
+            <label for="url">URL</label>
+            <input id="myURL" name="myURL" type="url" value="https://www.codingforeverybody.com/">
         </div>
         <div>
-            <input type="submit" value="Custom Text For A Button" name="Submit">
+            <label for="file">Choose file to upload</label>
+            <input type="file" id="file" name="file">
+        </div>
+        <div>
+            <label for="submit">Submit</label>
+            <input required="required" type="submit" value="Custom Name For a Button" name="submit">
         </div>
     </form>
+   
 </body>
 </html>
